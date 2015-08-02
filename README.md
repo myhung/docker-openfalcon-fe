@@ -12,7 +12,7 @@ $sudo docker build --force-rm=true -t openfalcon-fe .
 
 ### Basic Run
 
-Use default configuration, and falcon-fe package.
+Use default mysql account, configuration, and falcon-fe package.
 
 ```
 $sudo docker run -dti --name fe -p 1234:1234 openfalcon-fe
@@ -20,7 +20,7 @@ $sudo docker run -dti --name fe -p 1234:1234 openfalcon-fe
 
 ### Advanced Run
 
-+ Self-defined configuration
++ Self-defined mysql account and configuration
 
     Replace file **cfg.json** in the volume */config*.  
     For more detail about **cfg.json**, see [Fe](http://book.open-falcon.com/zh/install/fe.html).
