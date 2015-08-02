@@ -15,7 +15,7 @@ WORKDIR /root
 COPY run.sh ./
 RUN chmod +x run.sh
 
-#Port
+# Port
 EXPOSE 1234
 
 # Start
