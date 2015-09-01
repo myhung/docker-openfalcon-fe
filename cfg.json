@@ -28,9 +28,10 @@
         "max": 100
     },
     "shortcut": {
-        "falconPortal": "http://127.0.0.1:5050/",
-        "falconDashboard": "http://127.0.0.1:8081/",
-        "falconAlarm": "http://127.0.0.1:9912/"
+        "falconPortal": "http://portal.owlemon.com",
+        "falconDashboard": "http://falcon-dashboard.owlemon.com",
+        "grafanaDashboard": "http://grafana.owlemon.com",
+        "falconAlarm": "http://alarm.owlemon.com"
     }
 }
 
