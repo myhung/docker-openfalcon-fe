@@ -7,6 +7,11 @@ ENV WORKDIR=/home/fe PACKDIR=/package PACKFILE=falcon-fe.tar.gz CONFIGDIR=/confi
 # Volume
 VOLUME $CONFIGDIR $WORKDIR $PACKDIR
 
+# Package
+RUN \
+  apt-get update &&\
+  apt-get install -y ca-certificates
+
 # Install Open-Falcon Fe Component
 COPY $CONFIGFILE $CONFIGDIR/
 COPY $PACKFILE $PACKDIR/
