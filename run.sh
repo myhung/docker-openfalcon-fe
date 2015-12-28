@@ -18,6 +18,7 @@ $WORKDIR/control restart
 sleep $WAIT_SERVICE_READY
 check_service
 if [ $? -eq 0 ] ; then
+  sh $TDAGENT_DIR/$TDAGENT_SHELLSCRIPT >$TDAGENT_DIR/td-agent.log 2>&1 &
   $WORKDIR/control tail
 else
   echo "Failed to start."
